@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.box{
+  background-color: teal;
+  width: calc(100% - 20px);
+  height: calc(100vh - 20px);
+  margin: 10px auto;
+  background-size: cover;
+}
+
+.overlay{
+  position: relative;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.overlay:hover{
+  background-color: rgba(0,0,0,0);
+}
+
+.overlay h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 100px;
+  text-shadow: 5px 5px #000;
+}
+
+.overlay:hover h2{
+  text-shadow: none;
+}
+
+#roma{
+  background-image: url(https://img2.meteo.it/bin/90.$plit/C_109_meteoCitta_4_upiFoto.jpg);
+}
+
+#napoli{
+  background-image: url(https://luce-gas.it/sites/default/files/styles/article_hero/public/2020-09/offerte-gas-napoli.png?itok=eGhqtBUN);
+}
+
+#milano{
+  background-image: url(http://www.youparti.com/nightlife_2016/nightlife/wp-content/uploads/2018/10/Milano.jpg);
+}
